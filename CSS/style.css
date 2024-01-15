@@ -1,3 +1,47 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 550px;
+  margin: 30px auto;
+  border: 1px solid black;
+  padding: 15px;
+}
+
 h1 {
-  color: red;
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 8px;
+}
+
+.cities {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 20px;
+  width: 80%;
+}
+
+h2 {
+  margin: 0;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.time small {
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
 }

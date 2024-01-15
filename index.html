@@ -3,10 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>World Clock</title>
   </head>
   <body>
+    <div class="container">
+      <h1>WORLD CLOCK</h1>
+      <select>
+        <option value="">Select a city</option>
+        <option value="">Copenhagen</option>
+        <option value="">Los Angeles</option>
+        <option value="">Dubai</option>
+      </select>
+
+      <div class="cities">
+        <div>
+          <h2>London</h2>
+          <div class="date">January 15th 2024</div>
+        </div>
+        <div>
+          <div class="time">2:19:00 <small>PM</small></div>
+        </div>
+      </div>
+
+      <div class="cities">
+        <div>
+          <h2>New York</h2>
+          <div class="date">January 15th 2024</div>
+        </div>
+        <div>
+          <div class="time">2:19:00 <small>PM</small></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      This project was coded by <a href="">Mariana Reis</a> and is
+      <a href="">open sourced on GitHub </a>.
+    </footer>
+
     <script src="JavaScript/index.js"></script>
   </body>
 </html>
