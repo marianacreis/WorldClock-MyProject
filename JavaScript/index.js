@@ -23,3 +23,24 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+function showCity(event) {
+  let cityTimeZone = event.target.value;
+  let citiesElement = document.querySelector("#cities");
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  citiesElement.innerHTML = ` <div class="city" id="${cityTimeZone}">
+        <div>
+          <h2>${cityName}</h2>
+          <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+        </div>
+        <div>
+          <div class="time">${cityTime.format(
+            "H:mm:ss [<small>]A[</small>]"
+          )}</div>
+        </div>
+      </div>`;
+}
+
+let select = document.querySelector("#select");
+select.addEventListener("change", showCity);
