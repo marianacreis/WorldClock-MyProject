@@ -19,6 +19,15 @@ function updateTime() {
   let sydney = moment().tz("Australia/Sydney");
   sydneyDate.innerHTML = sydney.format("MMMM Do YYYY");
   sydneyTime.innerHTML = sydney.format("H:mm:ss [<small>]A[</small>]");
+
+  let johannesburgElement = document.querySelector("#johannesburg");
+  let johannesburgDate = johannesburgElement.querySelector(".date");
+  let johannesburgTime = johannesburgElement.querySelector(".time");
+  let johannesburg = moment().tz("Africa/Johannesburg");
+  johannesburgDate.innerHTML = johannesburg.format("MMMM Do YYYY");
+  johannesburgTime.innerHTML = johannesburg.format(
+    "H:mm:ss [<small>]A[</small>]"
+  );
 }
 
 updateTime();
@@ -44,7 +53,7 @@ function showCity(event) {
           )}</div>
         </div>
       </div>
-      <a href="index.html">Back to all cities<a/>
+      <a href="index.html" class="back-button">Back to all cities<a/>
       `;
 }
 
