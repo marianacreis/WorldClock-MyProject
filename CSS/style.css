@@ -1,36 +1,37 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #3f474c;
-  background-color: #f9f7fd;
+  color: black;
+  background-color: rgb(241, 239, 237);
+  text-transform: uppercase;
 }
 
 .container {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 60px auto 40px;
   padding: 30px 20px;
-  background-color: white;
+  background-color: #dfd9d1;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 h1 {
-  text-align: center;
-  color: #47867f;
   letter-spacing: 1px;
   font-weight: 500;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 select {
+  font-family: "Roboto", sans-serif;
   width: 95%;
   margin: 0 auto;
   display: block;
+  color: rgba(0, 0, 0, 0.771);
   padding: 15px 10px;
-  background-color: #bad9d1be;
+  background-color: #f1efed;
   border: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  color: #3f474c;
-  border: 1px solid #48857f;
+  font-size: 12px;
+  font-weight: 400;
   border-radius: 5px;
   text-transform: uppercase;
 }
@@ -38,9 +39,8 @@ select {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 20px -5px 25px -5px;
   padding: 0 20px;
-  text-transform: uppercase;
 }
 
 #london {
@@ -55,6 +55,7 @@ h2 {
   margin: 8px 0;
   font-size: 20px;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .date {
@@ -62,7 +63,7 @@ h2 {
 }
 
 .time {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 33px;
   margin-top: 8px;
 }
@@ -72,39 +73,40 @@ h2 {
 }
 
 hr {
-  width: 92%;
+  width: 94%;
   opacity: 0.6;
-  border: 0.5px solid #48857fba;
+  border: 0.5px solid black;
 }
 
 .back-button {
-  background-color: #48857f;
+  background-color: rgba(0, 0, 0, 0.75);
   text-decoration: none;
-  color: white;
+  color: #dfd9d1;
   padding: 10px;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 12px;
   margin-left: 12px;
 }
 
 .back-button:hover {
-  transition: all 150ms;
-  opacity: 0.7;
+  transition: ease 150ms;
+  opacity: 0.6;
 }
 
 footer {
   text-align: center;
-  font-size: 12px;
-  color: #3f474c;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.433);
 }
 
 footer a {
-  color: #47867f;
+  color: black;
+  font-weight: 400;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
 footer a:hover {
   transition: all 150ms;
-  opacity: 0.7;
+  opacity: 0.5;
 }

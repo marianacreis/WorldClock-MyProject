@@ -49,11 +49,11 @@ function showCity(event) {
         </div>
         <div>
           <div class="time">${cityTime.format(
-            "H:mm:ss [<small>]A[</small>]"
+            "H:mm [<small>]A[</small>]"
           )}</div>
         </div>
       </div>
-      <a href="index.html" class="back-button">Back to all cities<a/>
+      <a href="index.html" class="back-button">< Back to all cities<a/>
       `;
 }
 
